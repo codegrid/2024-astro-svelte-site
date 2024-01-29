@@ -1,0 +1,20 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const basePath = import.meta.env.BASE_URL;
+
+const news = await getCollection("news");
+---
+
+<BaseLayout title="お知らせ一覧">
+  <ul>
+    {
+      news.map((item) => (
+        <li>
+          <a href={`${basePath}/news/${item.slug}`}>{item.data.title}</a>
+        </li>
+      ))
+    }
+  </ul>
+</BaseLayout>

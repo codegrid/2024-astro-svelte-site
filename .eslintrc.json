@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "plugin:astro/recommended",
+    "plugin:svelte/recommended",
+    "prettier"
+  ],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": "latest"
+  },
+  "overrides": [
+    {
+      "files": ["*.astro"],
+      "parser": "astro-eslint-parser",
+      "parserOptions": {
+        "parser": "@typescript-eslint/parser",
+        "extraFileExtensions": [".astro"]
+      }
+    },
+    {
+      "files": ["*.svelte"],
+      "parser": "svelte-eslint-parser"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 ---
-import Hello from '../components/Hello.svelte';
+import Hello from "../components/Hello.svelte";
 
 const currentTime = new Date().toLocaleTimeString();
 ---
@@ -17,7 +17,7 @@ const currentTime = new Date().toLocaleTimeString();
       <p>Hello! This is Astro component.</p>
       <p>{currentTime}</p>
     </div>
-    <hr>
+    <hr />
     <Hello client:visible />
   </body>
 </html>

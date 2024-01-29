@@ -1,7 +1,7 @@
 <script>
-  import { onMount } from 'svelte';
+  import { onMount } from "svelte";
 
-  let currentTime = '';
+  let currentTime = "";
 
   onMount(() => {
     const now = new Date();

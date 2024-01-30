@@ -19,6 +19,6 @@ title: アクセス
 ### バスをご利用の方
 [最寄りのバス停名]が最寄りです。バス停から[会社名]までの道順は[詳細な案内]です。バス停周辺にも案内看板を設置しています。
 
-<div style="margin-top: 50px;">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1620.782119524455!2d139.71237073123535!3d35.66310639703825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b6044c66abb%3A0x9982787518a24960!2z44CSMTA3LTAwNjIg5p2x5Lqs6YO95riv5Yy65Y2X6Z2S5bGx77yV5LiB55uu77yV4oiS77yR77yYIDUxOA!5e0!3m2!1sja!2sjp!4v1706011837591!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<div style="margin-top: 50px; max-width: 100%;">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1620.782119524455!2d139.71237073123535!3d35.66310639703825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b6044c66abb%3A0x9982787518a24960!2z44CSMTA3LTAwNjIg5p2x5Lqs6YO95riv5Yy65Y2X6Z2S5bGx77yV5LiB55uu77yV4oiS77yR77yYIDUxOA!5e0!3m2!1sja!2sjp!4v1706011837591!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>

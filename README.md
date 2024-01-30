@@ -1,5 +1,7 @@
 # Astro+Svelteで作る会社サイトのデモ
 
+サイトのプレビュー：https://codegrid.github.io/2024-astro-svelte-site/
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
@@ -15,4 +17,4 @@ All commands are run from the root of the project, from a terminal:
 
 ## Branches
 
-- 1回目の内容：`demo-1`
+- 1回目の内容：[demo-1](https://github.com/codegrid/2024-astro-svelte-site/tree/demo-1)

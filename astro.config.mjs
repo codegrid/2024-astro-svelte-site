@@ -8,4 +8,11 @@ export default defineConfig({
   site: 'https://codegrid.github.io',
   base: '/2024-astro-svelte-site',
   trailingSlash: 'always',
+  vite: {
+    build: {
+      rollupOptions: {
+      external: [/pagefind\/.*/]
+      }
+    }
+  }
 });

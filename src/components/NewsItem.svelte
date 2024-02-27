@@ -7,7 +7,8 @@
   onMount(() => {
     const readItemData = window.localStorage.getItem("readItemList") || "[]";
     const readItemList = JSON.parse(readItemData);
-    isRead = readItemList.includes(`${basePath}/news/${slug}/`);
+
+    isRead = readItemList.includes(`${basePath}news/${slug}/`);
   });
 </script>
 

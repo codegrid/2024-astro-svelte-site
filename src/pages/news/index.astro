@@ -1,20 +1,13 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-
-const basePath = import.meta.env.BASE_URL;
-
+import NewsItem from "../../components/NewsItem.svelte";
 const news = await getCollection("news");
 ---
 
 <BaseLayout title="お知らせ一覧">
-  <ul>
-    {
-      news.map((item) => (
-        <li>
-          <a href={`${basePath}/news/${item.slug}`}>{item.data.title}</a>
-        </li>
-      ))
-    }
+  <h1>お知らせ一覧</h1>
+  <ul class="newsList">
+    {news.map((item) => <NewsItem slug={item.slug} title={item.data.title} client:load />)}
   </ul>
 </BaseLayout>

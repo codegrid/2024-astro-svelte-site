@@ -7,4 +7,5 @@ export default defineConfig({
   integrations: [svelte()],
   site: 'https://codegrid.github.io',
   base: '/2024-astro-svelte-site',
+  trailingSlash: 'always',
 });

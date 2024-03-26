@@ -1,0 +1,32 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import NewsItem from "../../components/NewsItem.svelte";
+
+export async function getStaticPaths({ paginate }) {
+  const news = await getCollection("news");
+  news.sort((a, b) => (a.data.date > b.data.date ? -1 : 1));
+  return paginate(news, { pageSize: 5 });
+}
+
+const { page } = Astro.props;
+---
+
+<BaseLayout title="お知らせ一覧">
+  <h1>お知らせ一覧</h1>
+  <p>Page {page.currentPage}</p>
+  <ul class="newsList">
+    {page.data.map((item) => <NewsItem slug={item.slug} title={item.data.title} client:load />)}
+  </ul>
+  <div class="newsList_nav">
+    {page.url.prev ? <a href={page.url.prev}>前のページ</a> : null}
+    {page.url.next ? <a href={page.url.next}>次のページ</a> : null}
+  </div>
+</BaseLayout>
+
+<style>
+  .newsList_nav {
+    display: flex;
+    gap: 1rem;
+  }
+</style>

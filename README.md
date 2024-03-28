@@ -18,3 +18,7 @@ All commands are run from the root of the project, from a terminal:
 ## Branches
 
 - 1回目の内容：[demo-1](https://github.com/codegrid/2024-astro-svelte-site/tree/demo-1)
+- 2回目の内容：[demo-2](https://github.com/codegrid/2024-astro-svelte-site/tree/demo-2)
+- 3回目の内容：[demo-3](https://github.com/codegrid/2024-astro-svelte-site/tree/demo-3)
+- 4回目の内容：[demo-4](https://github.com/codegrid/2024-astro-svelte-site/tree/demo-4)
+- 5回目の内容：[demo-5](https://github.com/codegrid/2024-astro-svelte-site/tree/demo-5)

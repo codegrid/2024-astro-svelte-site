@@ -1,4 +1,5 @@
 ---
+import Search from "../components/Search.svelte";
 const navItems = [
   { name: "会社概要", url: "/about/" },
   { name: "製品紹介", url: "/service/" },
@@ -11,6 +12,7 @@ const navItems = [
 <header>
   <div class="headerLogo">
     <a href=`/` class="headerLogo_text">CodeGrid社の架空のサイト</a>
+    <Search client:only="svelte" />
   </div>
   <ul class="headerNav">
     {
@@ -31,6 +33,14 @@ const navItems = [
     padding: 40px 10px;
     max-width: 960px;
     border-bottom: solid 5px #ccc;
+  }
+
+  .headerLogo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
   }
 
   .headerLogo_text {

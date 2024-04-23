@@ -1,33 +1,6 @@
-# Astro Starter Kit: Minimal
+# Astro+Svelteで作る会社サイトのデモ
 
-```sh
-npm create astro@latest -- --template minimal
-```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
+サイトのプレビュー：https://codegrid.github.io/2024-astro-svelte-site/
 
 ## 🧞 Commands
 
@@ -42,6 +15,11 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## Branches
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- 1回目の内容：[demo-1](https://github.com/codegrid/2024-astro-svelte-site/tree/demo-1)
+- 2回目の内容：[demo-2](https://github.com/codegrid/2024-astro-svelte-site/tree/demo-2)
+- 3回目の内容：[demo-3](https://github.com/codegrid/2024-astro-svelte-site/tree/demo-3)
+- 4回目の内容：[demo-4](https://github.com/codegrid/2024-astro-svelte-site/tree/demo-4)
+- 5回目の内容：[demo-5](https://github.com/codegrid/2024-astro-svelte-site/tree/demo-5)
+- 6回目の内容：[demo-6](https://github.com/codegrid/2024-astro-svelte-site/tree/demo-6)

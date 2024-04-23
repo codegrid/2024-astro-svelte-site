@@ -19,8 +19,8 @@ const { page } = Astro.props;
     {page.data.map((item) => <NewsItem slug={item.slug} title={item.data.title} client:load />)}
   </ul>
   <div class="newsList_nav">
-    {page.url.prev ? <a href={page.url.prev}>前のページ</a> : null}
-    {page.url.next ? <a href={page.url.next}>次のページ</a> : null}
+    {page.url.prev ? <a href={`.${page.url.prev}`}>前のページ</a> : null}
+    {page.url.next ? <a href={`.${page.url.next}`}>次のページ</a> : null}
   </div>
 </BaseLayout>
 

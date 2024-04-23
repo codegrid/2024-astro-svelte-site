@@ -1,24 +1,27 @@
 ---
 import Search from "../components/Search.svelte";
 const navItems = [
-  { name: "会社概要", url: "/about/" },
-  { name: "製品紹介", url: "/service/" },
-  { name: "採用情報", url: "/career/" },
-  { name: "アクセス", url: "/access/" },
-  { name: "お知らせ", url: "/news/" },
+  { name: "会社概要", url: "about/" },
+  { name: "製品紹介", url: "service/" },
+  { name: "採用情報", url: "career/" },
+  { name: "アクセス", url: "access/" },
+  { name: "お知らせ", url: "news/" },
 ];
 ---
 
 <header>
   <div class="headerLogo">
-    <a href=`/` class="headerLogo_text">CodeGrid社の架空のサイト</a>
+    <a href="" class="headerLogo_text">CodeGrid社の架空のサイト</a>
     <Search client:only="svelte" />
   </div>
   <ul class="headerNav">
     {
       navItems.map((item) => (
         <li>
-          <a href={item.url} class={Astro.url.pathname.startsWith(item.url) ? "current" : ""}>
+          <a
+            href={item.url}
+            class={Astro.url.pathname.startsWith(`${import.meta.env.BASE_URL}${item.url}`) ? "current" : ""}
+          >
             {item.name}
           </a>
         </li>

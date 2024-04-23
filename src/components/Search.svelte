@@ -5,7 +5,9 @@
   let searchResult = null;
 
   onMount(async () => {
-    pagefind = await import(/* @vite-ignore */ new URL("/pagefind/pagefind.js", import.meta.url).href);
+    pagefind = await import(
+      /* @vite-ignore */ new URL(`${import.meta.env.BASE_URL}pagefind/pagefind.js`, import.meta.url).href
+    );
     pagefind.init();
   });
 
